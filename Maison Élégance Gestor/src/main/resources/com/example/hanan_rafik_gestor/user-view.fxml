@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #800020;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hanan_rafik_gestor.UserController">
+   <center>
+      <ListView fx:id="listaProductos" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </BorderPane.margin></ListView>
+   </center>
+   <padding>
+      <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+   </padding>
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@maisonelegancelogo.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maison Élegance">
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="429.0">
+               <children>
+                  <TextField fx:id="TextoFiltrar" prefHeight="25.0" prefWidth="162.0" promptText="Ingresa el nombre ">
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btnFiltrar" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: orange;" text="Filtrar">
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <right>
+      <BorderPane fx:id="panelCarrito" prefHeight="263.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <TextArea fx:id="editCarrito" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </center>
+         <bottom>
+            <Label fx:id="txtPrecio" text="Label" textFill="WHITE" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="576.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnComprar" mnemonicParsing="false" style="-fx-background-color: green;" text="Comprar">
+               <HBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnAniader" mnemonicParsing="false" style="-fx-background-color: yellow;" text="Anadir">
+               <HBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnSalir" mnemonicParsing="false" style="-fx-background-color: red;" text="Salir">
+               <HBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

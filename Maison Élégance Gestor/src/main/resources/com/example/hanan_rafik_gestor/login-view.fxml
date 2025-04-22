@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="600.0" style="-fx-background-color: #800020;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hanan_rafik_gestor.LoginController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="220.0" prefWidth="500.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imagenLogo" fitHeight="150.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inicia Sesión" textAlignment="CENTER">
+               <font>
+                  <Font name="Constantia" size="38.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </Text>
+            <TextArea fx:id="textoCorreo" prefHeight="39.0" prefWidth="457.0" promptText="Nombre">
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </TextArea>
+            <TextArea fx:id="textoPass" prefHeight="24.0" prefWidth="508.0" promptText="Contraseña">
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="grupRadio" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="btnAdmin" mnemonicParsing="false" text="Administrador" textFill="#fbf9f9">
+                     <HBox.margin>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="btnUsuario" mnemonicParsing="false" text="Usuario" textFill="#eceaea">
+                     <HBox.margin>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="btnInvitado" mnemonicParsing="false" text="Invitado" textFill="#faf0f0">
+                     <HBox.margin>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="12.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnRegistrar" mnemonicParsing="false" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: #654321;" text="REGISTRAR" textFill="#eeebeb">
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnIniciarSession" mnemonicParsing="false" prefHeight="34.0" prefWidth="168.0" style="-fx-background-color: #654321;" text="INICIAR SESIÓN" textFill="#fbf8f8">
+                     <HBox.margin>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
